@@ -39,6 +39,25 @@ document.querySelectorAll(".readout-num[data-count]").forEach((el) => {
 });
 
 /* ---------------------------------------------------------
+   Tilt interativo no cartão do hero (segue o mouse)
+--------------------------------------------------------- */
+const heroSection = document.getElementById("heroSection");
+const deviceCard = document.getElementById("deviceCard");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (heroSection && deviceCard && !prefersReducedMotion && window.matchMedia("(min-width: 901px)").matches) {
+  heroSection.addEventListener("mousemove", (e) => {
+    const rect = heroSection.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    deviceCard.style.transform = `rotateY(${x * 10}deg) rotateX(${y * -10}deg)`;
+  });
+  heroSection.addEventListener("mouseleave", () => {
+    deviceCard.style.transform = "rotateY(0deg) rotateX(0deg)";
+  });
+}
+
+/* ---------------------------------------------------------
    Verificador de área de cobertura
    ---------------------------------------------------------
    1) Se as credenciais do Supabase abaixo estiverem preenchidas,
