@@ -1,28 +1,33 @@
 # V1 Banda Larga — site novo
 
-Site institucional recriado do zero para a V1 Banda Larga (Santa Rita-PB), em HTML/CSS/JS puro — sem build, sem framework, pronto pra subir no GitHub + Vercel.
+Site institucional recriado do zero para a V1 Banda Larga (Santa Rita-PB), em HTML/CSS/JS puro — sem build, sem framework, pronto pra subir no GitHub + Vercel. Agora com **várias páginas** (não é mais tudo numa página só).
 
 ## Estrutura
 
 ```
 v1-bandalarga/
-├── index.html          → página única com todas as seções
-├── css/style.css        → estilo completo do site
-├── js/main.js            → menu mobile, verificador de cobertura, animações
-├── supabase/schema.sql  → tabela de cobertura pro Supabase
+├── index.html            → Início (hero + atalhos + resumo de cada seção)
+├── planos.html           → Planos (os 5 planos completos)
+├── cobertura.html        → Verificar cobertura + lista de bairros
+├── vigia.html            → V1 Vigia (câmeras de segurança)
+├── central.html          → Central do Assinante
+├── institucional.html    → Sobre a V1
+├── css/style.css         → estilo completo do site (compartilhado por todas as páginas)
+├── js/main.js            → menu mobile, verificador de cobertura, animações (compartilhado)
+├── supabase/schema.sql   → tabela de cobertura pro Supabase
 └── README.md
 ```
 
-## Seções incluídas
+**Importante pra quem for editar depois**: o cabeçalho e o rodapé são repetidos em cada arquivo `.html` (é assim que sites estáticos simples funcionam, sem um sistema de "includes"). Se um dia precisar mudar um link do menu ou do rodapé, é preciso repetir a mudança nas 6 páginas. Se isso incomodar no futuro, dá pra migrar pra um framework como Next.js ou Astro — mas pra o tamanho atual do site, manter simples assim é mais fácil de hospedar e editar sem saber programar.
 
-- Hero com chamada principal e cartão de "status de sinal"
-- **Verificar área de cobertura** (busca por bairro, ligada ao Supabase)
-- **Planos** — os 5 planos atuais (Start 100, Plus 400, Flex 500, Premium 1000, Premium Ultra 1000)
-- Vantagens da V1 (fibra, Wi-Fi 6, câmeras, TV, cursos, suporte local)
-- **Central do Assinante** — login, 2ª via de boleto, **desbloqueio automático**, teste de velocidade, indique um amigo
-- Dúvidas frequentes
-- Rodapé com contato, redes sociais e CNPJ
-- Botão flutuante de WhatsApp
+## Páginas e o que tem em cada uma
+
+- **index.html (Início)** — hero com o cartão de "status de sinal" animado, atalhos pras 4 páginas principais, resumo de cobertura, 3 planos em destaque, vantagens da V1, teaser do V1 Vigia
+- **planos.html** — os 5 planos completos (Start 100, Plus 400, Flex 500, Premium 1000, Premium Ultra 1000) + dúvidas sobre planos
+- **cobertura.html** — o verificador de bairro (ligado ao Supabase) + lista completa dos bairros de Santa Rita-PB
+- **vigia.html** — a página do V1 Vigia (câmeras), com "como funciona" em 3 passos
+- **central.html** — login, 2ª via de boleto, **desbloqueio automático**, teste de velocidade, indique um amigo, falar com suporte
+- **institucional.html** — texto sobre a empresa, valores e presença em Santa Rita-PB
 
 ## 1. Antes de publicar — o que você PRECISA revisar
 
