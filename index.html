@@ -16,19 +16,18 @@
 <!-- ===================== HEADER ===================== -->
 <header class="site-header" id="topo">
   <div class="wrap header-inner">
-    <a href="#topo" class="brand">
+    <a href="index.html" class="brand">
       <img src="https://v1bandalarga.com.br/wp-content/uploads/2025/12/Logo-V1-Alta-2-150x150.png" alt="V1 Banda Larga" width="44" height="44">
       <span class="brand-text">V1 <em>Banda Larga</em></span>
     </a>
 
     <nav class="main-nav" id="mainNav">
-      <a href="#cobertura">Cobertura</a>
-      <a href="#planos">Planos</a>
-      <a href="#vantagens">Vantagens</a>
-      <a href="#vigia">V1 Vigia</a>
-      <a href="#central">Central do Assinante</a>
-      <a href="#faq">Dúvidas</a>
-      <a href="#contato">Contato</a>
+      <a href="index.html">Início</a>
+      <a href="planos.html">Planos</a>
+      <a href="cobertura.html">Cobertura</a>
+      <a href="vigia.html">V1 Vigia</a>
+      <a href="central.html">Central do Assinante</a>
+      <a href="institucional.html">Sobre a V1</a>
     </nav>
 
     <div class="header-actions">
@@ -59,8 +58,8 @@
       <h1>Internet que não deixa você esperando.</h1>
       <p class="hero-lead">Fibra óptica 100%, instalação rápida e um time de suporte que atende gente de Santa Rita-PB de verdade — sem robô, sem enrolação.</p>
       <div class="hero-cta">
-        <a href="#planos" class="btn btn-primary">Ver planos e preços</a>
-        <a href="#cobertura" class="btn btn-outline">Verificar cobertura</a>
+        <a href="planos.html" class="btn btn-primary">Ver planos e preços</a>
+        <a href="cobertura.html" class="btn btn-outline">Verificar cobertura</a>
       </div>
       <ul class="hero-trust">
         <li><strong>100%</strong> fibra óptica</li>
@@ -101,12 +100,50 @@
   </div>
 </section>
 
-<!-- ===================== COBERTURA ===================== -->
-<section class="section" id="cobertura">
+<!-- ===================== ATALHOS DE SERVIÇO ===================== -->
+<section class="section" style="padding-bottom: 40px;">
   <div class="wrap">
     <div class="section-head">
-      <h2>A fibra já chegou na sua rua?</h2>
-      <p>Digite o nome do seu bairro em Santa Rita-PB e veja na hora se a V1 já atende sua região.</p>
+      <h2>O que você precisa agora?</h2>
+    </div>
+
+    <div class="quick-links">
+      <a class="quick-link" href="planos.html">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2 2 7v6c0 5.25 3.6 9.74 10 11 6.4-1.26 10-5.75 10-11V7l-10-5Zm0 2.2 8 4v4.7c0 4.25-2.86 7.75-8 8.98-5.14-1.23-8-4.73-8-8.98V8.2l8-4Z"/></svg>
+        <h3>Ver planos</h3>
+        <p>De 100 a 1000 Mega, 100% fibra óptica.</p>
+        <span>Ver preços &rarr;</span>
+      </a>
+      <a class="quick-link" href="cobertura.html">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+        <h3>Verificar cobertura</h3>
+        <p>Veja se a fibra já chegou no seu bairro.</p>
+        <span>Verificar &rarr;</span>
+      </a>
+      <a class="quick-link" href="vigia.html">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M4 4h16v12H5.17L4 17.17V4Zm0-2a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4Z"/></svg>
+        <h3>V1 Vigia</h3>
+        <p>Câmeras de segurança com monitoramento remoto.</p>
+        <span>Conhecer &rarr;</span>
+      </a>
+      <a class="quick-link" href="central.html">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.42 0-8 2.24-8 5v3h16v-3c0-2.76-3.58-5-8-5Z"/></svg>
+        <h3>Central do Assinante</h3>
+        <p>Fatura, desbloqueio e mais, sem sair de casa.</p>
+        <span>Acessar &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COBERTURA (teaser) ===================== -->
+<section class="section" id="cobertura">
+  <div class="wrap">
+    <div class="teaser-head section-head">
+      <div>
+        <h2>A fibra já chegou na sua rua?</h2>
+        <p>Digite o nome do seu bairro em Santa Rita-PB e veja na hora se a V1 já atende sua região.</p>
+      </div>
     </div>
 
     <form class="coverage-form" id="coverageForm">
@@ -117,16 +154,19 @@
 
     <div class="coverage-result" id="coverageResult" role="status" aria-live="polite"></div>
 
-    <p class="coverage-hint">Não achou seu bairro na lista? Chama a gente no WhatsApp que a equipe confirma na hora se dá pra instalar.</p>
+    <p class="coverage-hint">Quer ver a lista completa de bairros atendidos? <a href="cobertura.html" style="color:var(--blue); font-weight:600;">Acesse a página de cobertura</a>.</p>
   </div>
 </section>
 
-<!-- ===================== PLANOS ===================== -->
+<!-- ===================== PLANOS (teaser) ===================== -->
 <section class="section section-dark" id="planos">
   <div class="wrap">
-    <div class="section-head">
-      <h2>Escolha o plano do tamanho da sua casa</h2>
-      <p>Todos os planos são 100% fibra óptica, com Wi-Fi de alta performance incluso.</p>
+    <div class="teaser-head section-head">
+      <div>
+        <h2>Escolha o plano do tamanho da sua casa</h2>
+        <p>Todos os planos são 100% fibra óptica, com Wi-Fi de alta performance incluso.</p>
+      </div>
+      <a class="see-all" href="planos.html">Ver todos os 5 planos &rarr;</a>
     </div>
 
     <div class="plans-grid">
@@ -138,37 +178,9 @@
           <li>Download 100 Mbps</li>
           <li>Upload 50 Mbps</li>
           <li>Wi-Fi alta performance</li>
-          <li>Fibra óptica</li>
         </ul>
         <div class="plan-price"><span>R$</span>74<small>,90</small><em>/mês</em></div>
         <a class="btn btn-whats btn-block" target="_blank" rel="noopener" href="https://api.whatsapp.com/send/?phone=5583988858206&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20V1%20Start%20100%20Mega&type=phone_number&app_absent=0">Quero esse plano</a>
-      </article>
-
-      <article class="plan-card">
-        <h3>V1 Plus</h3>
-        <div class="plan-speed"><span>400</span> Mega</div>
-        <ul class="plan-features">
-          <li>Download 400 Mbps</li>
-          <li>Upload 200 Mbps</li>
-          <li>Wi-Fi alta performance</li>
-          <li>Fibra óptica</li>
-        </ul>
-        <div class="plan-price"><span>R$</span>79<small>,90</small><em>/mês</em></div>
-        <a class="btn btn-whats btn-block" target="_blank" rel="noopener" href="https://api.whatsapp.com/send/?phone=5583988858206&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20V1%20Plus%20400%20Mega&type=phone_number&app_absent=0">Quero esse plano</a>
-      </article>
-
-      <article class="plan-card">
-        <h3>V1 Flex</h3>
-        <div class="plan-speed"><span>500</span> Mega</div>
-        <ul class="plan-features">
-          <li>Download 500 Mbps</li>
-          <li>Upload 250 Mbps</li>
-          <li>Wi-Fi 6 alta performance</li>
-          <li>1 câmera de segurança</li>
-          <li>TV + máximo cursos</li>
-        </ul>
-        <div class="plan-price"><span>R$</span>99<small>,90</small><em>/mês</em></div>
-        <a class="btn btn-whats btn-block" target="_blank" rel="noopener" href="https://api.whatsapp.com/send/?phone=5583988858206&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20V1%20Flex%20500%20Mega&type=phone_number&app_absent=0">Quero esse plano</a>
       </article>
 
       <article class="plan-card plan-highlight">
@@ -179,25 +191,21 @@
           <li>Download 1 Gbps</li>
           <li>Upload 500 Mbps</li>
           <li>2 roteadores Wi-Fi 6 mesh</li>
-          <li>1 câmera de segurança</li>
-          <li>TV + máximo cursos</li>
         </ul>
         <div class="plan-price"><span>R$</span>149<small>,90</small><em>/mês</em></div>
         <a class="btn btn-whats btn-block" target="_blank" rel="noopener" href="https://api.whatsapp.com/send/?phone=5583988858206&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20V1%20Premium%201000%20Mega&type=phone_number&app_absent=0">Quero esse plano</a>
       </article>
 
       <article class="plan-card">
-        <h3>V1 Premium Ultra</h3>
-        <div class="plan-speed"><span>1000</span> Mega</div>
+        <h3>V1 Flex</h3>
+        <div class="plan-speed"><span>500</span> Mega</div>
         <ul class="plan-features">
-          <li>Download 1 Gbps</li>
-          <li>Upload 500 Mbps</li>
-          <li>3 roteadores Wi-Fi 6 mesh</li>
-          <li>2 câmeras de segurança</li>
+          <li>Download 500 Mbps</li>
+          <li>1 câmera de segurança</li>
           <li>TV + máximo cursos</li>
         </ul>
-        <div class="plan-price"><span>R$</span>199<small>,90</small><em>/mês</em></div>
-        <a class="btn btn-whats btn-block" target="_blank" rel="noopener" href="https://api.whatsapp.com/send/?phone=5583988858206&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20V1%20Premium%20Ultra%201000%20Mega&type=phone_number&app_absent=0">Quero esse plano</a>
+        <div class="plan-price"><span>R$</span>99<small>,90</small><em>/mês</em></div>
+        <a class="btn btn-whats btn-block" target="_blank" rel="noopener" href="https://api.whatsapp.com/send/?phone=5583988858206&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20V1%20Flex%20500%20Mega&type=phone_number&app_absent=0">Quero esse plano</a>
       </article>
 
     </div>
@@ -246,30 +254,14 @@
   </div>
 </section>
 
-<!-- ===================== V1 VIGIA (câmeras) ===================== -->
+<!-- ===================== V1 VIGIA (teaser) ===================== -->
 <section class="section vigia" id="vigia">
   <div class="wrap vigia-inner">
     <div class="vigia-copy">
       <span class="vigia-tag">V1 Vigia</span>
       <h2>Proteja o que realmente importa</h2>
-      <p>Câmeras de vigilância inclusas nos planos Flex, Premium e Premium Ultra — ou instaladas à parte, com monitoramento em tempo real de onde você estiver.</p>
-
-      <ul class="vigia-features">
-        <li>
-          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="m9.55 17.6-4.7-4.7 1.4-1.4 3.3 3.3 7.3-7.3 1.4 1.4Z"/></svg>
-          <div><strong>Monitoramento 24h</strong><span>Acesse as imagens a qualquer momento pelo celular, tablet ou computador.</span></div>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="m9.55 17.6-4.7-4.7 1.4-1.4 3.3 3.3 7.3-7.3 1.4 1.4Z"/></svg>
-          <div><strong>Alta qualidade de imagem</strong><span>Tecnologia de ponta para registros claros e detalhados.</span></div>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="m9.55 17.6-4.7-4.7 1.4-1.4 3.3 3.3 7.3-7.3 1.4 1.4Z"/></svg>
-          <div><strong>Facilidade e praticidade</strong><span>Instalação rápida e suporte especializado do início ao fim.</span></div>
-        </li>
-      </ul>
-
-      <a class="btn btn-whats" target="_blank" rel="noopener" href="https://api.whatsapp.com/send/?phone=5583988858206&text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20V1%20Vigia%20(c%C3%A2meras%20de%20seguran%C3%A7a)&type=phone_number&app_absent=0">Falar sobre o V1 Vigia</a>
+      <p>Câmeras de vigilância com monitoramento em tempo real de onde você estiver, direto do celular.</p>
+      <a class="btn btn-primary" href="vigia.html">Conhecer o V1 Vigia</a>
     </div>
 
     <div class="vigia-phone" aria-hidden="true">
@@ -282,91 +274,9 @@
         <div class="phone-events">
           <div class="phone-event"><span class="event-dot"></span>06:00</div>
           <div class="phone-event"><span class="event-dot"></span>05:00</div>
-          <div class="phone-event"><span class="event-dot"></span>04:00</div>
         </div>
         <div class="phone-cta">Fale conosco</div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== CENTRAL DO ASSINANTE ===================== -->
-<section class="section section-dark" id="central">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Central do Assinante</h2>
-      <p>Resolva o essencial sem precisar ligar: acesse sua conta, pague a fatura ou libere sua internet na hora.</p>
-    </div>
-
-    <div class="central-grid">
-
-      <a class="central-card" href="https://v1bandalarga.sgp.net.br/accounts/central/login" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.42 0-8 2.24-8 5v3h16v-3c0-2.76-3.58-5-8-5Z"/></svg>
-        <h3>Central do Assinante</h3>
-        <p>Acesse sua conta, veja faturas e acompanhe seu contrato.</p>
-        <span class="central-link">Entrar &rarr;</span>
-      </a>
-
-      <a class="central-card" href="https://v1bandalarga.sgp.net.br/accounts/central/login" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M4 4h16v2H4V4Zm0 14h16v2H4v-2Zm2-10h12v2H6V8Zm0 4h12v2H6v-2Z"/></svg>
-        <h3>2ª via de boleto</h3>
-        <p>Emita a segunda via da sua fatura em poucos cliques.</p>
-        <span class="central-link">Emitir &rarr;</span>
-      </a>
-
-      <a class="central-card central-card-accent" href="https://v1bandalarga.sgp.net.br/accounts/central/login" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 1a5 5 0 0 1 5 5v3h.5A1.5 1.5 0 0 1 19 10.5v9a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19.5v-9A1.5 1.5 0 0 1 6.5 9H7V6a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v3h6V6a3 3 0 0 0-3-3Zm0 10a1.5 1.5 0 0 0-.75 2.8V17.5a.75.75 0 0 0 1.5 0v-1.7A1.5 1.5 0 0 0 12 13Z"/></svg>
-        <h3>Desbloqueio automático</h3>
-        <p>Já pagou? Libere sua internet na hora, sem esperar o suporte.</p>
-        <span class="central-link">Desbloquear &rarr;</span>
-      </a>
-
-      <a class="central-card" href="https://v1bandalarga.speedtestcustom.com" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm1 15h-2v-2h2Zm1.07-7.75-1.42 1.42a2 2 0 0 0-.65 1.33h-2a4 4 0 0 1 1.17-2.75l1.09-1.1a1.5 1.5 0 1 0-2.55-1.07h-2a3.5 3.5 0 1 1 6.36 2.17Z"/></svg>
-        <h3>Teste de velocidade</h3>
-        <p>Confira agora a velocidade real da sua internet V1.</p>
-        <span class="central-link">Testar &rarr;</span>
-      </a>
-
-      <a class="central-card" href="https://api.whatsapp.com/message/WPY2QM5CGW5VB1" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2 4.5 6v6.5c0 5.05 3.4 9.76 7.5 11 4.1-1.24 7.5-5.95 7.5-11V6L12 2Zm3.6 8.1-4.2 4.2-2.4-2.4 1.06-1.06L11.4 12.2l3.14-3.14L15.6 10.1Z"/></svg>
-        <h3>Indique um amigo</h3>
-        <p>Chame a gente no WhatsApp e indique quem também merece internet boa.</p>
-        <span class="central-link">Indicar &rarr;</span>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===================== FAQ ===================== -->
-<section class="section" id="faq">
-  <div class="wrap wrap-narrow">
-    <div class="section-head">
-      <h2>Dúvidas frequentes</h2>
-    </div>
-
-    <div class="faq-list">
-      <details class="faq-item">
-        <summary>Quanto tempo leva pra instalar?</summary>
-        <p>O prazo varia conforme a disponibilidade de rede na sua rua. Depois de confirmada a cobertura, nossa equipe agenda a instalação com você.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Preciso comprar o roteador?</summary>
-        <p>Não. O equipamento vai em comodato — ele é seu enquanto você for cliente V1, e a manutenção é por nossa conta.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Como funciona o desbloqueio automático?</summary>
-        <p>Depois de confirmado o pagamento, você acessa a Central do Assinante e libera sua internet na hora, sem precisar esperar o suporte.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Posso mudar de plano depois?</summary>
-        <p>Sim. É só falar com a gente pelo WhatsApp ou pela Central do Assinante que ajustamos seu plano.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Quais formas de pagamento vocês aceitam?</summary>
-        <p>Boleto e Pix. Fale com a equipe pra confirmar as opções disponíveis pro seu plano.</p>
-      </details>
     </div>
   </div>
 </section>
@@ -403,17 +313,17 @@
 
     <div class="footer-col">
       <h4>Links úteis</h4>
-      <a href="#planos">Planos</a>
-      <a href="#cobertura">Área de cobertura</a>
-      <a href="https://v1bandalarga.speedtestcustom.com" target="_blank" rel="noopener">Teste de velocidade</a>
-      <a href="https://api.whatsapp.com/message/WPY2QM5CGW5VB1" target="_blank" rel="noopener">Indique um amigo</a>
+      <a href="planos.html">Planos</a>
+      <a href="cobertura.html">Área de cobertura</a>
+      <a href="vigia.html">V1 Vigia</a>
+      <a href="institucional.html">Sobre a V1</a>
     </div>
 
     <div class="footer-col">
       <h4>Central do Assinante</h4>
-      <a href="https://v1bandalarga.sgp.net.br/accounts/central/login" target="_blank" rel="noopener">Entrar na central</a>
+      <a href="central.html">Ver central completa</a>
       <a href="https://v1bandalarga.sgp.net.br/accounts/central/login" target="_blank" rel="noopener">2ª via de boleto</a>
-      <a href="https://v1bandalarga.sgp.net.br/accounts/central/login" target="_blank" rel="noopener">Desbloqueio automático</a>
+      <a href="https://v1bandalarga.speedtestcustom.com" target="_blank" rel="noopener">Teste de velocidade</a>
     </div>
 
     <div class="footer-col">
