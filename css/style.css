@@ -384,6 +384,92 @@ p{ margin: 0; }
   font-size: 0.82rem; font-weight: 600; padding: 10px; border-radius: 999px;
 }
 
+/* ============================================================
+   PAGE HERO — banner de topo das páginas internas
+   ============================================================ */
+.page-hero{
+  background: linear-gradient(160deg, var(--ink) 0%, var(--ink-soft) 100%);
+  color: #fff;
+  padding: 64px 0 56px;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero .hero-glow{ opacity: .5; }
+.page-hero-inner{ position: relative; max-width: 640px; }
+.page-hero h1{ font-size: clamp(2rem, 4vw, 2.9rem); font-weight: 700; letter-spacing: -0.01em; }
+.page-hero p{ margin-top: 16px; color: rgba(255,255,255,.75); font-size: 1.02rem; max-width: 50ch; }
+
+/* ============================================================
+   QUICK LINKS — atalhos de serviço na home
+   ============================================================ */
+.quick-links{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.quick-link{
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 26px 22px;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.quick-link:hover{ border-color: var(--blue); transform: translateY(-3px); }
+.quick-link svg{ color: var(--blue); }
+.quick-link h3{ margin-top: 14px; font-size: 1rem; font-weight: 600; }
+.quick-link p{ margin-top: 6px; font-size: 0.86rem; color: var(--slate); }
+.quick-link span{ display: inline-block; margin-top: 14px; font-size: 0.84rem; font-weight: 600; color: var(--blue); }
+
+/* ============================================================
+   TEASER — resumo de seção com link para página cheia
+   ============================================================ */
+.teaser-head{ display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.teaser-head .see-all{ font-size: 0.9rem; font-weight: 600; color: var(--blue); white-space: nowrap; }
+.section-dark .teaser-head .see-all{ color: var(--cyan); }
+
+/* ============================================================
+   COBERTURA — página completa
+   ============================================================ */
+.coverage-form-lg input{ padding: 18px 22px; font-size: 1.05rem; }
+.coverage-form-lg{ max-width: 640px; }
+.bairros-list{ margin-top: 20px; }
+.bairros-list h3{ font-size: 1rem; font-weight: 600; margin-bottom: 16px; }
+.bairro-grid{ display: flex; flex-wrap: wrap; gap: 10px; }
+.bairro-badge{
+  font-size: 0.84rem; padding: 8px 16px; border-radius: 999px;
+  background: #fff; border: 1px solid var(--line); color: var(--slate);
+}
+
+/* ============================================================
+   PASSOS — sequência numerada (usar só quando é processo real)
+   ============================================================ */
+.steps-list{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; counter-reset: step; }
+.step-item{ position: relative; padding-left: 46px; }
+.step-item::before{
+  counter-increment: step; content: counter(step);
+  position: absolute; left: 0; top: 0;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--blue); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 600; font-size: 0.95rem;
+}
+.step-item h3{ font-size: 1rem; font-weight: 600; }
+.step-item p{ margin-top: 6px; font-size: 0.88rem; color: var(--slate); }
+
+/* ============================================================
+   INSTITUCIONAL
+   ============================================================ */
+.about-grid{ display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: start; }
+.about-copy p{ color: var(--slate); margin-bottom: 16px; }
+.about-copy p:last-child{ margin-bottom: 0; }
+.values-grid{ display: grid; gap: 18px; }
+.value-card{ background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; }
+.value-card h3{ font-size: 0.98rem; font-weight: 600; }
+.value-card p{ margin-top: 6px; font-size: 0.86rem; color: var(--slate); }
+.about-facts{ display: flex; gap: 34px; margin-top: 34px; flex-wrap: wrap; }
+.about-facts div strong{ display: block; font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; color: var(--blue); }
+.about-facts div span{ font-size: 0.82rem; color: var(--slate); }
+
 /* ---------- central do assinante ---------- */
 .central-grid{
   display: grid;
@@ -480,6 +566,9 @@ p{ margin: 0; }
   .advantages-grid{ grid-template-columns: repeat(2, 1fr); }
   .central-grid{ grid-template-columns: repeat(2, 1fr); }
   .footer-grid{ grid-template-columns: 1fr 1fr; }
+  .quick-links{ grid-template-columns: repeat(2, 1fr); }
+  .steps-list{ grid-template-columns: 1fr; }
+  .about-grid{ grid-template-columns: 1fr; }
 }
 
 @media (max-width: 900px){
@@ -506,6 +595,7 @@ p{ margin: 0; }
   .footer-grid{ grid-template-columns: 1fr; }
   .coverage-form{ flex-direction: column; }
   .coverage-form button{ width: 100%; }
+  .quick-links{ grid-template-columns: 1fr; }
   .section{ padding: 64px 0; }
   .hero{ padding: 56px 0 80px; }
 }
